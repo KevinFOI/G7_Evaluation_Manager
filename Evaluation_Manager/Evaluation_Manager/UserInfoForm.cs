@@ -9,7 +9,6 @@ namespace Evaluation_Manager
     internal class UserInfoForm
     {
         public string Name;
-        public string Surname;
         public string YearofBirth;
         public string City;
         public string Faculty;

@@ -15,7 +15,7 @@ namespace Evaluation_Manager
             {
                 UserFileReader filereader = new UserFileReader(ofd.FileName);
                 UserFileParser parser = new UserFileParser();
-                UserFormInfo forminfo = new UserFormInfo(parser.stringParser(filereader.Readfile()));
+                UserInfoForm forminfo = new UserInfoForm(parser.stringParser(filereader.Readfile()));
                 UserDisplayer displayer = new UserDisplayer();
                 displayer.DisplayInfo(this, forminfo);
 

@@ -10,7 +10,7 @@ namespace Evaluation_Manager
 {
     internal class UserDisplayer
     {
-        public void DisplayInfo(Form1 form, UserFormInfo current_UserForm)
+        public void DisplayInfo(Form1 form, UserInfoForm current_UserForm)
         {
             if (current_UserForm != null && form != null)
             {
