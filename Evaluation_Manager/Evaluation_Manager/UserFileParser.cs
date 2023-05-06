@@ -24,7 +24,6 @@ namespace Evaluation_Manager
                     list.Add(value);
 
                 }
-
             }
             return list.ToArray();
         }

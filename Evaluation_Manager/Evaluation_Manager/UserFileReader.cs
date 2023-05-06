@@ -17,8 +17,6 @@ namespace Evaluation_Manager
             filePath = p_filePath;
         }
 
-
-        //Methods
         public string Readfile()
         {
             string data;
