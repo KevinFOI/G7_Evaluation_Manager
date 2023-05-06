@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            NameTextBox = new TextBox();
             button1 = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -37,25 +36,19 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            CityTextBox = new TextBox();
+            YearOfBirthTextBox = new TextBox();
+            FacultyTextBox = new TextBox();
+            RoleTextBox = new TextBox();
+            SpecificAttributeTextBox = new TextBox();
             SuspendLayout();
             // 
-            // textBox1
+            // NameTextBox
             // 
-            textBox1.Location = new Point(227, 92);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(236, 31);
-            textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(227, 144);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(236, 31);
-            textBox2.TabIndex = 1;
+            NameTextBox.Location = new Point(227, 92);
+            NameTextBox.Name = "NameTextBox";
+            NameTextBox.Size = new Size(236, 31);
+            NameTextBox.TabIndex = 0;
             // 
             // button1
             // 
@@ -75,7 +68,6 @@
             label1.Size = new Size(105, 25);
             label1.TabIndex = 3;
             label1.Text = "Full Name : ";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -122,33 +114,40 @@
             label6.TabIndex = 8;
             label6.Text = "[role specific attribute]:";
             // 
-            // textBox3
+            // CityTextBox
             // 
-            textBox3.Location = new Point(227, 255);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(236, 31);
-            textBox3.TabIndex = 9;
+            CityTextBox.Location = new Point(227, 199);
+            CityTextBox.Name = "CityTextBox";
+            CityTextBox.Size = new Size(236, 31);
+            CityTextBox.TabIndex = 9;
             // 
-            // textBox4
+            // YearOfBirthTextBox
             // 
-            textBox4.Location = new Point(227, 199);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(236, 31);
-            textBox4.TabIndex = 10;
+            YearOfBirthTextBox.Location = new Point(227, 144);
+            YearOfBirthTextBox.Name = "YearOfBirthTextBox";
+            YearOfBirthTextBox.Size = new Size(236, 31);
+            YearOfBirthTextBox.TabIndex = 10;
             // 
-            // textBox5
+            // FacultyTextBox
             // 
-            textBox5.Location = new Point(227, 309);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(236, 31);
-            textBox5.TabIndex = 11;
+            FacultyTextBox.Location = new Point(227, 258);
+            FacultyTextBox.Name = "FacultyTextBox";
+            FacultyTextBox.Size = new Size(236, 31);
+            FacultyTextBox.TabIndex = 11;
             // 
-            // textBox6
+            // RoleTextBox
             // 
-            textBox6.Location = new Point(227, 363);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(236, 31);
-            textBox6.TabIndex = 12;
+            RoleTextBox.Location = new Point(227, 309);
+            RoleTextBox.Name = "RoleTextBox";
+            RoleTextBox.Size = new Size(236, 31);
+            RoleTextBox.TabIndex = 12;
+            // 
+            // SpecificAttributeTextBox
+            // 
+            SpecificAttributeTextBox.Location = new Point(227, 363);
+            SpecificAttributeTextBox.Name = "SpecificAttributeTextBox";
+            SpecificAttributeTextBox.Size = new Size(236, 31);
+            SpecificAttributeTextBox.TabIndex = 13;
             // 
             // Form1
             // 
@@ -156,10 +155,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(506, 428);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
+            Controls.Add(SpecificAttributeTextBox);
+            Controls.Add(RoleTextBox);
+            Controls.Add(FacultyTextBox);
+            Controls.Add(YearOfBirthTextBox);
+            Controls.Add(CityTextBox);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -167,20 +167,17 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(NameTextBox);
             MaximizeBox = false;
             Name = "Form1";
             Text = "User data display";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox NameTextBox;
         private Button button1;
         private Label label1;
         private Label label2;
@@ -188,9 +185,10 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox CityTextBox;
+        private TextBox YearOfBirthTextBox;
+        private TextBox FacultyTextBox;
+        private TextBox RoleTextBox;
+        private TextBox SpecificAttributeTextBox;
     }
 }
